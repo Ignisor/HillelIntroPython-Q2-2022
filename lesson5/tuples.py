@@ -38,3 +38,13 @@ print(smoothie is fruits)
 
 # довжина кортежу
 len(smoothie)
+
+# приклад
+print('Розпізнавач фруктів 3000')
+fruits = ('🍊', '🍏', '🍌', '🍉', '🍋', '🍑')
+item = input('Що розпізнати? ')
+
+if item in fruits:
+    print(f'{item} це фрукт!')
+else:
+    print(f'{item} це не фрукт!')
