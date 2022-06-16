@@ -68,5 +68,11 @@ for i in range(1, 11):
     thread.start()
 
 
+# ---
+
+
+from concurrent.futures import ThreadPoolExecutor
+
+
 with ThreadPoolExecutor(max_workers=3) as executor:
     executor.map(request_some_important_data, range(1, 11))
